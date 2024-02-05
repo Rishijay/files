@@ -1,5 +1,9 @@
 import React, { Suspense } from 'react';
 
+interface App2Module {
+  default: React.ComponentType<any>;
+}
+
 interface ErrorBoundaryProps {
   onError: (error: Error) => void;
   fallback: React.ReactNode;
@@ -38,11 +42,11 @@ const App2Fallback: React.FC = () => (
 
 const loadRemoteApp2 = async () => {
   try {
-    const module = await import('app2');
-    return module;
+    const module: App2Module = await import('app2');
+    return module.default; // Access the default export
   } catch (error) {
     console.error('Error loading remote app2:', error);
-    return { default: () => <App2Fallback /> };
+    return () => <App2Fallback />; // Return a function that renders the fallback component
   }
 };
 
