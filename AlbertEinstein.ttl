@@ -1528,4 +1528,3 @@ ns25:_The_Movie	dbo:wikiPageWikiLink	dbr:Albert_Einstein .
 ns26:_The_Movie	dbo:wikiPageWikiLink	dbr:Albert_Einstein .
 <http://dbpedia.org/resource/1947_flying_disc_craze>	dbo:wikiPageWikiLink	dbr:Albert_Einstein .
 <http://dbpedia.org/resource/1955_in_philosophy>	dbo:wikiPageWikiLink	dbr:Albert_Einstein .
-db
