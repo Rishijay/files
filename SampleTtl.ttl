@@ -1,0 +1,6 @@
+@prefix ex: <http://example.org/> .
+
+ex:Albert_Einstein ex:influenced ex:Niels_Bohr .
+ex:Niels_Bohr ex:influenced ex:Werner_Heisenberg .
+ex:Werner_Heisenberg ex:influenced ex:Richard_Feynman .
+ex:Richard_Feynman ex:influenced ex:Stephen_Hawking .
